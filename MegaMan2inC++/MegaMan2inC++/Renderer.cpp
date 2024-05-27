@@ -82,13 +82,11 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(D3DReadFileToBlob(L"Shaders/VertexShader.cso", &vShader))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "D3DReadFileToBlob", MB_OK);
         return false;
     }
 
     if FAILED(direct3D->Device->CreateVertexShader(vShader->GetBufferPointer(), vShader->GetBufferSize(), NULL, &vertexShader))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "CreateVertexShader", MB_OK);
         return false;
     }
 
@@ -101,7 +99,6 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(direct3D->Device->CreateInputLayout(layoutDesc, 3, vShader->GetBufferPointer(), vShader->GetBufferSize(), &inputLayout))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "CreateInputLayout", MB_OK);
         return false;
     }
     vShader->Release();
@@ -109,13 +106,11 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
     ID3DBlob* pShader = nullptr;
     if FAILED(D3DReadFileToBlob(L"Shaders/PixelShader.cso", &pShader))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "D3DReadFileToBlob", MB_OK);
         return false;
     }
 
     if FAILED(direct3D->Device->CreatePixelShader(pShader->GetBufferPointer(), pShader->GetBufferSize(), NULL, &pixelShader))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "Renderer", MB_OK);
         return false;
     }
 
@@ -129,7 +124,6 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(direct3D->Device->CreateRasterizerState(&rasterDesc, &rasterState))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "Renderer", MB_OK);
         return false;
     }
 
@@ -141,7 +135,6 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(direct3D->Device->CreateBuffer(&vertexBufferDesc, nullptr, &vertexBuffer))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "Renderer", MB_OK);
         return false;
     }
 
@@ -168,7 +161,6 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(direct3D->Device->CreateBuffer(&indexBufferDesc, &indexData, &indexBuffer))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "Renderer", MB_OK);
         return false;
     }
 
@@ -195,7 +187,6 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(direct3D->Device->CreateBuffer(&constBufferDesc, &constantData, &constantBuffer))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "Renderer", MB_OK);
         return false;
     }
 
@@ -216,7 +207,6 @@ bool Renderer::Initialize(Window* window, Direct3D* direct3D)
 
     if FAILED(direct3D->Device->CreateSamplerState(&samplerDesc, &sampler))
     {
-        MessageBox(window->GetWndId(), "Buceta alert", "Renderer", MB_OK);
         return false;
     }
 
