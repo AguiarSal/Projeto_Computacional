@@ -1,4 +1,4 @@
-﻿  compilation object save succeeded; see C:\Users\enzoc\Desktop\Códigos\MegaMan2inC++\MegaMan2inC++\Shaders\PixelShader.cso
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: O diretório intermediário (Debug\) contém arquivos compartilhados de outro projeto (MegaMan2inC++.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  compilation object save succeeded; see C:\Users\enzoc\Desktop\Códigos\MegaMan2inC++\MegaMan2inC++\Shaders\PixelShader.cso
   compilation object save succeeded; see C:\Users\enzoc\Desktop\Códigos\MegaMan2inC++\MegaMan2inC++\Shaders\VertexShader.cso
-  MegaMan.cpp
-  MegaMan2inC++.vcxproj -> C:\Users\enzoc\Desktop\Códigos\MegaMan2inC++\Debug\MegaMan2inC++.exe
+  MegaMan2inC++.vcxproj -> C:\Users\enzoc\Desktop\Códigos\MegaMan2inC++\Debug\Space Invaders in C++.exe
