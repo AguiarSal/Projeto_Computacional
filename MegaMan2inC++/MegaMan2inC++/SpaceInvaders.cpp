@@ -1,0 +1,60 @@
+#include "Engine.h"
+#include "Graphics.h"
+#include "MegaMan.h"
+#include "SpaceInvaders.h"
+#include "Spaceship.h"
+
+Scene* SpaceInvaders::scene = nullptr;
+
+void SpaceInvaders::Initialization()
+{
+	scene = new Scene();
+
+	background = new Sprites("Graphics/Sprites/Backgrounds/Black_Background.png");
+	
+	scene->Add(new SpaceShip());
+	
+}
+
+void SpaceInvaders::Update()
+{
+	if (window->KeyDown(VK_ESCAPE))
+	{
+		window->CloseWnd();
+	}
+
+	scene->SceneUpdate();
+}
+
+void SpaceInvaders::Draw()
+{
+	background->SprtDraw(0.0f, 0.0f, Layer::Layer2);
+
+	scene->SceneDraw();
+}
+
+void SpaceInvaders::Finalize()
+{
+	delete background;
+
+	delete scene;
+}
+
+int APIENTRY WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
+					 _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
+{
+	Engine* engine = new Engine();
+	engine->window->SetWndMode(WINDOWED);
+	engine->window->SetWndSize(448, 512);
+	engine->window->SetWndColor(0, 112, 187);
+	engine->window->SetWndTitle("SpaceInvaders");
+	engine->window->SetWndIcon(IDI_MEGAICON);
+	engine->window->SetWndCursor(IDC_MEGACURSOR);
+
+	engine->direct3D->ActiveVSync(true);
+	
+	int exit_code = engine->Start(new SpaceInvaders());
+
+	delete engine;
+	return exit_code;
+}

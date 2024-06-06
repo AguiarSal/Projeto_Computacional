@@ -33,6 +33,14 @@ Direct3D::~Direct3D()
 		RenderTargetView = nullptr;
 	}
 
+	if (SwapChain)
+	{
+		// Direct3D é incapaz de fechar quando em tela cheia
+		SwapChain->SetFullscreenState(false, NULL);
+		SwapChain->Release();
+		SwapChain = nullptr;
+	}
+
 	if (Context)
 	{
 		Context->Release();

@@ -1,52 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <FxCompile Include="PixelShader.hlsl">
-      <Filter>Space Invaders\Arquivos de Sombreamento</Filter>
-    </FxCompile>
-    <FxCompile Include="VertexShader.hlsl">
-      <Filter>Space Invaders\Arquivos de Sombreamento</Filter>
-    </FxCompile>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{8da223ee-6dcb-4dda-8f0e-b3db9e81f50b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Engine\Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Engine\Arquivos de Sombreamento">
+      <UniqueIdentifier>{8969bea5-7542-4af1-912f-94327a1634ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Space Invaders">
+      <UniqueIdentifier>{4122f879-bae6-4827-b793-23301234a1f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Space Invaders\Arquivos de Cabeçalho">
+      <UniqueIdentifier>{b9a1c008-4f3f-422c-9cc4-28abc7a446c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Space Invaders\Arquivos de Origem">
+      <UniqueIdentifier>{c736a4fa-4028-4ea3-8f1e-df0d6d81f5fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Space Invaders\Arquivos de Recurso">
+      <UniqueIdentifier>{0e28d065-1995-44aa-9c1e-9d39fb587921}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Direct3D.cpp">
-      <Filter>Engine\Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Engine.cpp">
-      <Filter>Engine\Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="FPS.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
+    <ClCompile Include="Window.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceInvaders.cpp">
+      <Filter>Space Invaders\Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Img.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
-      <Filter>Engine\Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene.cpp">
-      <Filter>Engine\Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Sprites.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
+    <ClCompile Include="Renderer.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
+    <ClCompile Include="GameObject.cpp">
       <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="MegaMan.cpp">
       <Filter>Space Invaders\Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="SpaceInvaders.cpp">
-      <Filter>Space Invaders\Arquivos de Origem</Filter>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Spaceship.cpp">
       <Filter>Space Invaders\Arquivos de Origem</Filter>
@@ -56,44 +76,44 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Direct3D.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Engine.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="FPS.h">
       <Filter>Engine\Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>Engine\Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Img.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprites.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Engine\Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Window.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3D.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
       <Filter>Engine\Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Graphics.h">
       <Filter>Space Invaders\Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Img.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
     <ClInclude Include="MegaMan.h">
       <Filter>Space Invaders\Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="SpaceInvaders.h">
       <Filter>Space Invaders\Arquivos de Cabeçalho</Filter>
@@ -106,34 +126,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Engine">
-      <UniqueIdentifier>{6930a24d-7449-4c2c-a37b-4cb5cdb89d4a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Engine\Arquivos de Cabeçalho">
-      <UniqueIdentifier>{528bcbd0-fd2a-4868-a9b5-d5036a6f973f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Engine\Arquivos de Origem">
-      <UniqueIdentifier>{47bcedb7-b640-40fc-b118-2aef4fc96783}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Space Invaders">
-      <UniqueIdentifier>{f12a7caa-74e5-4cc9-ba01-389b477dd0c1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Space Invaders\Arquivos de Cabeçalho">
-      <UniqueIdentifier>{30d513ae-1284-4b77-a01b-afd79548caad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Space Invaders\Arquivos de Origem">
-      <UniqueIdentifier>{877618e1-b671-4f05-8a3c-cd234dabdc5a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Space Invaders\Arquivos de Recurso">
-      <UniqueIdentifier>{c112fcba-ea31-4afb-b9c0-0e685c85aacc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Space Invaders\Arquivos de Sombreamento">
-      <UniqueIdentifier>{223ff196-6289-4f91-a974-3f99c33cf7f1}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="Graphics.rc">
       <Filter>Space Invaders\Arquivos de Recurso</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>Engine\Arquivos de Sombreamento</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>Engine\Arquivos de Sombreamento</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
