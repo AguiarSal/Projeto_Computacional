@@ -28,7 +28,7 @@ Para construir e executar o projeto, você precisa ter um ambiente Windows com a
 
 ### Construindo o Projeto
 1. Clone o repositório:
-`git clone https://github.com/seuusuario/space-invaders-replica.git`
+`git clone git@github.com:AguiarSal/Projeto_Computacional.git`
 2. Abra o projeto no Visual Studio.
 3. Abra as propriedades do projeto para configurações essenciais.
 4. Vá em Propriedades de Configuração > Geral > Padrão de Linguagem C++ > Selecione a opção **Padrão ISO C++ (/std:c++17)**
