@@ -2,10 +2,10 @@
 Este projeto é uma réplica do jogo clássico Space Invaders. Ele é implementado em C++ usando apenas bibliotecas padrão de C/C++ e a API do Windows (Windows.h). Nenhuma outra biblioteca externa é utilizada, garantindo que o projeto seja construído do zero.
 ## Indice
 
-+ [Introdução](Introdução)
-+ [Recursos](Recursos)
-+ [Instalação](Instalação)
-+ [Uso](Uso)
++ Introdução
++ Recursos
++ Instalação
++ Uso
 ## Introdução
 
 A réplica do Space Invaders é um projeto que visa recriar o jogo de arcade clássico usando práticas modernas de C++. O jogo inclui um loop de jogo totalmente funcional, gerenciamento de sprites, detecção de colisão e renderização usando a API Direct3D.
